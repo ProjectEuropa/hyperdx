@@ -165,6 +165,8 @@ services:
       HYPERDX_API_KEY: ${HYPERDX_API_KEY}
       NODE_ENV: development
       PORT: ${HYPERDX_APP_PORT}
+      SERVER_URL: ${HYPERDX_API_URL}:${HYPERDX_API_PORT}
+      OTEL_EXPORTER_OTLP_ENDPOINT: ${OTEL_EXPORTER_OTLP_ENDPOINT}
     networks:
       - internal
     depends_on:
